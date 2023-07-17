@@ -1,1 +1,2 @@
 # parallelworkflowsfortwocrawler
+Created two crawlers, so that two crawlers will run parallely. When these two crawlers will completed and it is in a ready state, then glue job will start. Whenever new file came into S3 buket lambda will trigger that event and it will start the execution of glue workflow, and the output will store it it in S3 bucket. And in Glue Job applied Joint condition, filter, Rename field.
